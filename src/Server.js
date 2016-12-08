@@ -12,7 +12,7 @@ const getConversationData = require('./getConversationData')
 const saveCML = require('./saveCML')
 const getSSLConfig = require('./getSSLConfig')
 
-const port = 8443
+const port = process.env.PORT || 8443;
 
 class Server {
   constructor() {
